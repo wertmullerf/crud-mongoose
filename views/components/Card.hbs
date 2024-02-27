@@ -1,9 +1,13 @@
 <article class="card mb-2">
     <div class="card-body">
-        <p>{{item.origin}}</p>
-        <p>{{item.shortUrl}}</p>
-        <a class="btn btn-danger" href="">Eliminar</a>
-        <a class="btn btn-warning" href="">Editar</a>
-        <a class="btn btn-info" href="">Copiar</a>
+        <p>{{this.origin}}</p>
+        <p>{{this.shortURL}}</p>
+        <a class="btn btn-danger" href="/eliminar/{{this._id}}">Eliminar</a>
+        <a class="btn btn-warning" href="/editar/{{this._id}}">Editar</a>
+        <button
+            data-short="{{this.shortURL}}"
+            class="btn btn-info"
+            href=""
+        >Copiar</button>
     </div>
 </article>
